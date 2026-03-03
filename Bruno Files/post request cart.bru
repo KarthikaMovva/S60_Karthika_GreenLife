@@ -1,0 +1,33 @@
+meta {
+  name: post request cart
+  type: http
+  seq: 10
+}
+
+post {
+  url: http://localhost:3000/cart/post/667966f1d7fd83e9f7b55f58
+  body: json
+  auth: none
+}
+
+headers {
+  x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJOZXdVc2VyIjp7ImlkIjoiNjY3YWUxNmM2NDQxYmE4MjM0MDIzMjNiIn0sImlhdCI6MTcyMTcwODIzNiwiZXhwIjoyMDMyNzQ4MjM2fQ.ecHy6ttgjG3uSAWj_BsNZbtOju9gzLHXEsPSVe8_Ujw
+}
+
+body:json {
+  {
+    "UserId" : "667966f1d7fd83e9f7b55f58",
+    "plants" : [
+      {
+        "id": "66a12c866cc84ec9000e6c26",
+        "quantity":1,
+        "PlantCost" : 259
+      },
+      {
+        "id": "66a12c866cc84ec9000e6c27",
+        "quantity" : 2,
+        "PlantCost" : 299
+      }
+    ]
+  }
+}
